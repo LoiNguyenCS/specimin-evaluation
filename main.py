@@ -306,7 +306,7 @@ def main():
     evaluation_results = []
     if parsed_data:
         for issue in parsed_data:
-            if issue["issue_id"] != "cf-1291" and issue["issue_id"] != "cf-6282":
+            if issue["issue_id"] != "cf-1291":
                 continue
             result = performEvaluation(issue)
             evaluation_results.append(result)
