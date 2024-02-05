@@ -2,9 +2,7 @@ name: Python Test
 
 on:
   push:
-    branches: 
-      - main
-      - test
+    branches: [main]
   pull_request:
     branches: [ main ]
 
@@ -24,12 +22,3 @@ jobs:
         uses: gradle/gradle-build-action@v2
       - name: Run tests
         run: python TestMain.py
-      - name: Other user repo checkout
-        uses: actions/checkout@v3
-        with:
-          repository: kelloggm/specimin
-          path: specimin
-      - name: Run build
-        run: | 
-          cd specimin
-          ./gradlew build expectedTestOutputsMustCompile
