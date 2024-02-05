@@ -21,7 +21,7 @@
     {
         "issue_id" : "cf-6282",
         "url": "https://github.com/tahiat/Chronicle-Core.git",
-        "branch": "yoo/checkerframework-crash",
+        "branch": "",
         "commit_hash": "",
         "project_name": "Chronicle-Core",
         "build_command": "mvn -X compile",
